@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Bootstrap Task
+	</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" href="jquery-3.6.0.js"></script>
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	
+	<style type="text/css">
+		*{
+		padding:0px;
+		margin:0px;
+		}#menubar{
+		color:white;
+		text-align: right;
+		}#menubar span{
+		background-color:white;
+		}#menubar ul li{
+		padding-left:40px;
+		padding-right: 40px;
+		}#menubar ul li:hover{
+		background-color:#2c343c;
+		}#menubar ul li a{
+		color:white;
+		}.joinusbtn{
+			background-color:gray;
+			text-align:center;
+			justify-content:center;
+		}
+		.carousel-inner img {
+	    width: 100%;
+	    height: 100%;
+	 	}#ourServices,.ourServices,.btn{
+	  	background-color:#efefef;
+	  	}h2{
+  		color:#7F8C8D;
+  		}h3{
+		color: #575757;
+		}.serviceCard{
+		text-align: center;
+		justify-content: center;
+  		}.circle{
+		margin:0 auto;
+		width:150px;
+		height:130px;
+		border-radius: 50%;
+		background-color: white;
+  		}#aboutWork{
+  		margin:0 auto;
+  		justify-content: center;
+  		margin-left: 3px;
+  		width: 100%;
+  		background-image: url("images/serfoot.png");
+  		}#aboutWork p{
+  		font-size: 20px;
+		color:#d4d5d7;
+  		}#projectImg{
+  		width:800px;
+		margin-top: 30px;
+  		}#autoCorousel{
+  		width:100%;
+  		height:300px;
+	  	}.followus{
+		justify-content: center;
+		width:100%;
+		background-image:url("images/abtfooter.png");
+		}.imageTeam{
+		justify-content: center;
+		}.footer1{
+		width:100%;
+		height:25%;
+		background-color: #505050;
+		}.mainFooter{
+	 	line-height: 1.6;
+		color:#797F81;
+		width:100%;
+		background-image: url("images/mainfooter.png");
+		}.formgroup{
+			width:800px;
+			height:500px;
+			margin:0 auto;
+		}
+<!-- 		Media query of mobile device -->
+		@media screen and (max-width: 767px) {
+		nav li{
+			width:20%;
+		}.container-fluid{
+			width:100%;
+		}nav li a{
+			font-size: 14px;
+		}#demo{
+			width:100%;
+		}.quotes h3{
+			font-size: 16px;
+		}.auotes p{
+			font-size: 12px;
+		}.ourServices,.teamDetail,.projects,.contactForm  h2{
+			font-size: 16px;
+		}.ourServices,.teamDetail,.projects,.contactForm p{
+			font-size: 12px;
+		}#loadbtn{
+			width:300px;
+			height:20px;
+			font-size: 8px;
+		}
+		/*#aboutWork p{
+			font-size: 10px;
+		}.projects h2{
+			font-size: 16px;
+		}*/.projects p{
+			font-size: 10px;
+		}.projects a{
+			font-size: 10px;
+		}#projectImg{
+		margin-top: 10px;
+		width:300px;
+		}.projects img{
+		width:100px;
+		height: 100px;
+		}#teamDetail h2{
+		font-size:16px;
+		font-size: 10px;
+		}.imageTeam img{
+		width:100%;
+		height:200px;
+		}.mapouter .gmap_canvas iframe{
+			height:100px;
+		}.formgroup{
+			width:300px;
+			height:400px;
+		}.formgroup input{
+			width:50px;
+		}.formgroup textarea{
+			width:200px;
+		}.footer1 h3{
+			font-size: 16px;
+		}
+		}
+</style>
+	
+</head>
+<body>
+
+	  
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     <img src="images/logo.png" height="80" width="170" />
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+		<li><a href="#">About US</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Indicators -->
+<div class="container-fullwidth">
+<div id="demo" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+    	<li data-target="#demo" data-slide-to="0" class="active"></li>
+    	<li data-target="#demo" data-slide-to="1"></li>
+    	<li data-target="#demo" data-slide-to="2"></li>
+  	</ul>
+  <!-- The slideshow -->
+  	<div class="carousel-inner">
+    	<div class="carousel-item active">
+      		<img src="images/slide1.jpeg" alt="Los Angeles">
+    	</div>
+    	<div class="carousel-item">
+      		<img src="images/slide1.jpeg" alt="Chicago">
+    	</div>
+    	<div class="carousel-item">
+      		<img src="images/slide1.jpeg" alt="New York">
+    	</div>
+  	</div>
+  <!-- Left and right controls -->
+  	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+   	<span class="carousel-control-prev-icon"></span>
+  	</a>
+  	<a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  	</a>
+	</div>
+</div>
+</div>
+<!-- 	Quotes  -->
+<div class="quotes">
+<div class="container-fullwidth">
+	<div class="row">
+		<div class="col">
+			<center>
+			<h3 class="font-weight-bold pt-5">MEET A NEW PERSON DAILY</h3>
+			<p style="color:#808080;" class="mb-5 mt-4">
+			This is historic passageway was once worn into a dence chain of dusty<br/>
+			trails by caravans of horses and camels carrying merchants and their many <br/>
+			ware between continental Asia and Europe.</p>
+			</center>
+		</div>
+	</div>
+</div>
+</div>
+<!-- 	Quotes End here -->
+<!-- 	Our Services Start from here -->
+<div class="container-fullwidth">
+<div class="ourServices">
+<!-- <div class="container-fullwidth">
+	<div class="row" id="ourServices"> -->
+		<div class="col">
+		<h2 class="text-center"><img src="images/service.png" width="50" height="50"/>OUR SERVICES</h2>
+		<p class="text-center mb-0" style="color:grey;">But first, let start off by talking about the people who work in customer service. This way,<br/> you will know who to talk to when you call customer service. This information will also help<br/> you figure out if a career in customer service is right for you!</p>
+		</div>
+</div>
+<!-- Our Service card -->
+
+	<div class="row d-flex justify-content-center" id="ourServices">
+			<div class="col-md-3 serviceCard">
+			<div class="circle">
+				<img src="images/camera.png" class="mt-2" width=100 height=100>
+			</div>
+			<h3>Camera</h3>
+			<p>This is camera for view our gallery you will find more images</p>
+			<button class="card-btn btn-success">Click Me</button>
+			</div>
+			<div class="col-md-3 serviceCard">
+			<div class="circle">
+			<img src="images/phonebook.png" class="mt-2" width=100 height=100>
+			</div>
+			<h3>Phonebook</h3>
+			<p>This is camera for view our gallery you will find more images</p>
+			<button class="card-btn btn-success">Click Me</button>
+			</div>
+			<div class="col-md-3 serviceCard">	
+			<div class="circle">
+			<img src="images/support.png" class="mt-2" width=100 height=100>
+			</div>
+			<h3>Support</h3>
+			<p>This is camera for view our gallery you will find more images</p>
+			<button class="card-btn btn-success">Click Me</button>
+			</div>
+			<div class="col-md-3 serviceCard">
+			<div class="circle">
+			<img src="images/calendar.png" class="mt-2" width=100 height=100>
+			</div>
+			<h3>Calender</h3>
+			<p>This is camera for view our gallery you will find more images</p>
+			<button class="card-btn btn-success">Click Me</button>
+			</div>
+		</div>
+		<div class="col text-center btn">
+	 <button id="loadbtn" class="m-auto btn-primary">WE NOW OFFER 24/7 PHONE AND EMAIL SUPPORT</button>
+		</div>
+	</div>
+	
+
+<!-- About Our Work -->
+<div class="container-fullwidth d-flex">
+<div id="aboutWork" class="row w-100 h-300">
+		<div class="col-md-3 text-center">
+			<img src="images/code1.png">
+			<p><b>+10M</b> CODE LINES</p>
+		</div>
+		<div class="col-md-3 text-center">
+			<img src="images/hours1.png">
+			<p><b>+500</b> WORK HOURS</p>
+		</div>
+		<div class="col-md-3 text-center">
+			<img src="images/email1.png" >
+			<p><b>+60K</b> EMAIL SENT</p>
+		</div>
+		<div class="col-md-3 text-center">
+			<img src="images/earning1.png">
+			<p><b>+30$M</b> EARNINGS</p>
+		</div>
+	</div>
+</div>
+<!-- Our Projects Coding start here-->
+<div class="projects">
+	<div class="container-fluid">
+		<div class="row mb-3">
+		<div class="col">
+		<center>
+		<h2><img src="images/bulb.png" width="50" height="50" />OUR PROJECTS</h2>
+		<p  style="color:grey;">But first, let start off by talking about the people who work in customer service. This way,<br/>
+		you will know who to talk to when you call customer service. This information will also help you figure out if a career<br/> in customer service is right for you!</p> 
+		<a href="#">All</a>&emsp;&#9679;&emsp;<a href="#">PhotoShop</a>&emsp;&#9679;&emsp;<a href="#">WordPress</a>&emsp;&#9679;&emsp;<a href="#">jQuery</a>&emsp;&#9679;&emsp;<a href="#">javaScript</a>
+		</center>
+		</div>
+		</div>
+		<div class="row ">
+		<!-- <div class="text-center " id="mainprojectDiv">
+		 -->	<!-- <div id="projectImg" class="align-self-center">
+ -->		<div class="col-md-4 mb-2 text-center">
+			<img src="images/photo1.jpeg" height="200" width="250" />
+			</div>
+			<div class="col-md-4 mb-2 text-center">
+			<img src="images/photo2.jpeg" height="200" width="250" />
+			</div>
+			<div class="col-md-4 mb-2 text-center">
+			<img src="images/photo3.jpeg" height="200" width="250" />
+			</div>
+			<div class="col-md-4 mb-2 text-center">
+			<img src="images/photo4.jpeg" height="200" width="250" />
+			</div>
+			<div class="col-md-4 mb-2 text-center">
+			<img src="images/photo5.jpeg" height="200" width="250" />
+			</div>
+			<div class="col-md-4 mb-2 text-center">
+			<img src="images/photo6.jpeg" height="200" width="250" />
+			</div>
+			<div class="col-md-4 mb-2 text-center">
+			<img src="images/photo7.jpeg" height="200" width="250" />
+			</div>
+			<div class="col-md-4 mb-2 text-center">
+			<img src="images/photo8.jpeg" height="200" width="250" />
+			</div>
+			<div class="col-md-4 mb-2 text-center">
+			<img src="images/photo9.jpeg" height="200" width="250" />
+			</div>
+			<div class="col text-center m-5">
+				<button class="btn-primary">Load More Projects</button>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</div>
+<!-- 	//Automatic corousel -->
+	<div class="row">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner ">
+		    <div class="carousel-item active">
+		    	<img class="d-block w-100" src="images/slide.png" height="300" >
+		    </div>
+		    <div class="carousel-item">
+		    	<img class="d-block w-100" src="images/slide.png" height="300">
+		    </div>
+		    <div class="carousel-item">
+		      	<img class="d-block w-100" src="images/slide.png" height="300">
+		    </div>
+			</div>
+		</div>
+	</div>
+<!-- //Some lines and Teams About US -->
+<div class="teamDetail mb-5">
+	<div class="row">
+		<div class="col-12 pt-3">
+			<h2 class="text-center"><img src="images/aboutus.png" width="50" height="50">&emsp;ABOUT US</h2>
+		</div>
+		<div class="col-12 pt-3">
+			<p class="text-center">But first, let start off by talking about the people who work in customer service. This way,<br/> you will know who to talk to when you call customer service. This information<br/> will also help you figure out if a career in customer service is right for you!</p>	
+			<h3 class="text-center">Say <a  href="#">Hello</a> To Our Team</h3>
+		</div>
+			<!-- IMAGE OF TEAM -->
+		<div class="col-12 imageTeam">
+			<div class="text-center">
+				<img  src="images/abtImg.png" height="250" />
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="text-center info">
+				<h3><b>Design Group</b></h3>
+				<h4 style="color:grey">Cheif Executive Officer</h4>
+				<h5 style="padding-top:5px;color:grey">It is a long established fact that a reader will be distracted by the readable<br/> content of a page when looking at its layout.</h5>
+				<div class="icon-container">
+				<a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="m-auto joinusbtn">
+			<p style="padding: 10px;"><b style="color:black;">JOIN US NOW!</b>&emsp;Duis aute irure dolor in Boeing is the world's leading aerosp ace company.&emsp;<button class="btn-success">Apply Now</button></p>
+		</div>
+	</div>
+</div>
+<!-- here Our follow us links and other detail -->
+<div class="followus text-center pt-3 justify-content-between">	
+<div class="container  d-flex justify-content-center">
+	<div class="row">
+	<div class="col-md-3">
+		<img src="images/fbImg.png" class="imgFollowus" width="150" height="150"/>
+	</div>
+	<div class="col-md-3">
+		<img src="images/twitterImg.png" class="imgFollowus" width="150" height="150"/>
+	</div>
+	<div class="col-md-3">
+		<img src="images/googleImg.png" class="imgFollowus" width="150" height="150"/>
+	</div>
+	<div class="col-md-3">
+		<img src="images/rssImg.png" class="imgFollowus" width="150" height="150"/>
+	</div>
+	</div>
+</div>
+</div>
+<!-- Our follow us section ends here -->
+<!-- our map section start here -->
+<div class="container-fluid">
+<div class="mapouter">
+	<div class="gmap_canvas">
+		<iframe style="width:100%;" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=1&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+		</iframe>
+	</div>
+</div>
+</div>
+<!-- map section ends here -->
+<!-- Our contact us coding starts here-->
+<div class="contactForm">
+<div class="container-fluid">
+	<div class="row">
+	<div class="col-12">
+	<center>
+		<h2><img src="images/contact.png" width="50" height="50"/>&emsp;CONTACT US</h2>
+		<p style="color:grey;">Here are some more information about us, you can get in touch with us any time you want.</p>
+		<p style="color:grey;">&#8226;&emsp;Address:<a style="text-decoration:none" href="#">  New Your City</a>&emsp;&#8226;&emsp;Email:<a style="text-decoration:none" href="#">  My@gmail.com</a>&emsp;&#8226;&emsp;Phone:<a style="text-decoration:none" href="#">  +00951 985 427 81</a>&emsp;&#8226;</p>
+	</center>
+	</div>
+	<div class="formgroup justify-content-center">	
+		<div class="row">
+		<div class="col-4">
+			<label>Name</label>
+		</div>
+		<div class="col-4">
+			<label>Email Address</label>
+		</div>
+		<div class="col-4">
+			<label>Subject</label>
+		</div>
+	
+		<div class="col-4 input-group">
+			<input type="text" class="form-control-sm">
+		</div>
+		<div class="col-4 input-group">
+			<input type="text" class="form-control-sm">
+		</div>
+		<div class="col-4 input-group">
+			<input type="text" class="form-control-sm">
+		</div>
+	
+		<div class="col-12">
+			<label>Description</label>
+		</div>
+		<div class="col-12">
+			<textarea rows="7" cols="100">		
+			</textarea>
+		</div>
+		<div class="col text-right no-gutters">
+			<p>we will get back to you as soon as we can*</p>
+		</div>
+		<div class="col no-gutters">
+			<button class="btn-primary">Send Message</button><br/>	
+		</div>
+		</div>
+	</div>
+	</div>
+</div>
+</div>
+<!-- Our contact us coding ends here-->
+<div class="container-fullwidth">
+	<img src="images/line.png" style="width:100%" height="18" />
+<div class="footer1">
+<center>
+	<h3 style="color:white;"><p>SUBSCRIBE TO OUR NEWS LETTER!</p></h3>
+	 <div class="justify-content-center input-group mb-3">
+	 <div class="input-group-prepend">
+    	<span class="input-group-text" id="basic-addon1"><i class="fa fa-paper-plane " aria-hidden="true"></i></span>
+  	</div>
+  	 <input type="text" class="form-control-sm" placeholder="Enter Email Address" aria-label="Username" aria-describedby="basic-addon1">
+	</div>
+	<span style="color:#bfbfbf;">Subscribe to our weekly newsletter to receive the latest<br/>
+	freebies in your inbox!</span><br/>
+	<button class="subbtn btn-success">Subscribe!</button>
+</center>
+</div>
+<div class="mainFooter">
+	<center>
+		<p>Made With  <img style="padding-top:4px;" src="images/heartIcon.png" />in Earth</p>
+
+		<p>All Rights reserved Copyright 2021 <span style="color:#a6a39c;">Parag's Design</p>
+		<p style="color:green;">Find US On</p>
+		<a class="icon" href="#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+		<a class="icon" href="#"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+		<a class="icon" href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+		<a class="icon" href="#"><i class="fa fa-globe fa-3x" aria-hidden="true"></i></i></a>
+	</center>
+</div>
+</div>
+</body>
+</html>
